@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ออกบิลค่าน้ำ</title>
+    <title>ระบบออกบิลค่าน้ำ</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>ออกบิลค่าน้ำ</h2>
+    <h2>ระบบออกบิลค่าน้ำ</h2>
     
-    <label>บ้านเลขที่: <input type="text" id="houseName"></label><br>
-    <label>เลขมิเตอร์ครั้งก่อน: <input type="number" id="prevMeter"></label><br>
-    <label>เลขมิเตอร์ครั้งหลัง: <input type="number" id="currentMeter"></label><br>
-    
+    <label for="houseNumber">บ้านเลขที่:</label>
+    <input type="text" id="houseNumber"><br><br>
+
+    <label for="prevMeter">เลขมิเตอร์ครั้งก่อน:</label>
+    <input type="number" id="prevMeter"><br><br>
+
+    <label for="currentMeter">เลขมิเตอร์ครั้งนี้:</label>
+    <input type="number" id="currentMeter"><br><br>
+
+    <label for="otherFee">ค่าบริการอื่นๆ:</label>
+    <input type="number" id="otherFee" placeholder="กรอกค่าบริการอื่นๆ (ถ้ามี)"><br><br>
+
     <button onclick="generateBill()">สร้างบิล</button>
     <button onclick="printBill()">พิมพ์บิล</button>
 
     <div id="billOutput"></div>
 
-    <script src="scrips.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
