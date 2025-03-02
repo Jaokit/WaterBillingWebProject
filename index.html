@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ออกบิลค่าน้ำ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>ออกบิลค่าน้ำ</h2>
+    
+    <label>บ้านเลขที่: <input type="text" id="houseName"></label><br>
+    <label>เลขมิเตอร์ครั้งก่อน: <input type="number" id="prevMeter"></label><br>
+    <label>เลขมิเตอร์ครั้งหลัง: <input type="number" id="currentMeter"></label><br>
+    
+    <button onclick="generateBill()">สร้างบิล</button>
+    <button onclick="printBill()">พิมพ์บิล</button>
+
+    <div id="billOutput"></div>
+
+    <script src="scrips.js"></script>
+</body>
+</html>
